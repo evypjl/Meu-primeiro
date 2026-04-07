@@ -3,54 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo - Seu Nome</title>
+    <title>Evellyn | Nail Designer & Dev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Evellyn Cruz da Silva</h1>
-        <p>Profissão | Localização</p>
-        <p>Email: seuemail@example.com | Telefone: (11) 99999-9999 | LinkedIn: linkedin.com/in/seunome</p>
-    </header>
 
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Uma breve descrição sobre você, suas habilidades e objetivos profissionais.</p>
-    </section>
+    <div class="glam-overlay"></div>
 
-    <section id="experiencia">
-        <h2>Experiência Profissional</h2>
-        <div class="job">
-            <h3>Cargo - Empresa</h3>
-            <p>Período: Janeiro 2020 - Presente</p>
-            <ul>
-                <li>Responsabilidade 1</li>
-                <li>Responsabilidade 2</li>
-            </ul>
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">Evy<b>Studio</b></a>
+            <div class="nav-links">Portfólio Profissional</div>
         </div>
-        <!-- Adicione mais empregos conforme necessário -->
-    </section>
+    </nav>
 
-    <section id="educacao">
-        <h2>Educação</h2>
-        <div class="education">
-            <h3>Curso - Instituição</h3>
-            <p>Ano de Conclusão</p>
+    <section class="hero-section d-flex align-items-center justify-content-center">
+        <div class="container text-center">
+            <div class="portrait-wrapper mx-auto mb-4">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Evellynn&accessories=glasses&clothing=blazer" alt="Evelin" class="profile-img">
+            </div>
+            <h1 class="glam-title">Evellyn <span id="typing-text"></span></h1>
+            <p class="subtitle-professional">Nail Designer Especialista & Desenvolvedora em Formação</p>
+            <div class="mt-4">
+                <span class="badge rounded-pill bg-soft-pink">Alongamento</span>
+                <span class="badge rounded-pill bg-soft-pink">Nail Art</span>
+                <span class="badge rounded-pill bg-soft-pink">Designs personalizados</span>
+            </div>
         </div>
-        <!-- Adicione mais formações -->
     </section>
 
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Habilidade 1</li>
-            <li>Habilidade 2</li>
-            <li>Habilidade 3</li>
-        </ul>
+    <section class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <h2 class="section-title">Arte nas Mãos & No Código</h2>
+                <p class="text-muted">Transformando conceitos em realidade, seja através de um design de unhas impecável ou de uma interface web elegante.</p>
+                
+                <div class="skills-list mt-4">
+                    <div class="skill-item"><i class="fas fa-check-circle"></i> Atendimento Personalizado</div>
+                    <div class="skill-item"><i class="fas fa-check-circle"></i> Especialista em Gel e Fibra</div>
+                    <div class="skill-item"><i class="fas fa-check-circle"></i> Estudante de Desenvolvimento de Sistemas</div>
+                </div>
+            </div>
+            
+            <div id="beautyCarousel" class="carousel slide carousel-fade shadow-lg" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#beautyCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#beautyCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#beautyCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner rounded-4">
+        <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1632345033839-236113cc2f60?q=80&w=800" class="d-block w-100" alt="Nail Art Design">
+            <div class="carousel-caption d-none d-md-block bg-glass">
+                <h5 class="fw-bold">Nail Design ✨</h5>
+                <p>Arte e sofisticação em cada detalhe.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=800" class="d-block w-100" alt="Sobrancelhas Perfeitas">
+            <div class="carousel-caption d-none d-md-block bg-glass">
+                <h5 class="fw-bold">Brows Specialist 🌸</h5>
+                <p>O olhar perfeito começa com o design certo.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?q=80&w=800" class="d-block w-100" alt="Extensão de Cílios">
+            <div class="carousel-caption d-none d-md-block bg-glass">
+                <h5 class="fw-bold">Lash Extensions 👁️</h5>
+                <p>Volume e leveza para realçar sua beleza natural.</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#beautyCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#beautyCarousel" data-bs-slide-to="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+    </button>
+</div>
+
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Evellyn Cruz da Silva. Todos os direitos reservados.</p>
+    <footer class="text-center py-5">
+        <p class="footer-text">© 2024 Evy Studio | Desenvolvido com carinho por Evellyn</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
     </footer>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
